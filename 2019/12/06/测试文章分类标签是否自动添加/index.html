@@ -7,15 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>归档 - Hexo</title>
+<title>测试文章分类标签是否自动添加 - Hexo</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;index.html">
+    <meta name="description" content="放在 文章前缀头部 “—“ 包含中的文本不会被显示到文章正文中或标签中(可能是格式问题导致不显示在 tags 中)。">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="测试文章分类标签是否自动添加">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;06&#x2F;%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="放在 文章前缀头部 “—“ 包含中的文本不会被显示到文章正文中或标签中(可能是格式问题导致不显示在 tags 中)。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:updated_time" content="2019-12-05T18:33:46.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 
@@ -75,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/catspaw120120.png" alt="Hexo" height="28">
+                <img src="/images/catspaw120120.png" alt="测试文章分类标签是否自动添加" height="28">
             
             </a>
         </div>
@@ -86,7 +90,7 @@
                 <a class="navbar-item"
                 href="/">主页</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/archives">归档</a>
                 
                 <a class="navbar-item"
@@ -125,93 +129,143 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
         
-<div class="card widget">
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-05T18:10:27.000Z">2019-12-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB/">测试文章分类</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 475 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                测试文章分类标签是否自动添加
+            
+        </h1>
+        <div class="content">
+            <!-- 这部分内容放在 文章前缀头部 ，测试是否显示  -->
+<p>放在 文章前缀头部 “—“ 包含中的文本不会被显示到文章正文中或标签中(可能是格式问题导致不显示在 tags 中)。</p>
+<a id="more"></a>
+
+<p>确定是因为格式问题导致。命令行工具中已经报异常提示：</p>
+  <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">ERROR Process failed: _posts/测试文章分类标签是否自动添加.md</span><br><span class="line">YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 7, column 1:</span><br><span class="line"></span><br><span class="line">    ^</span><br><span class="line">    at generateError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)</span><br><span class="line">    at throwError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)</span><br><span class="line">    at readBlockMapping (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1073:9)</span><br><span class="line">    at composeNode (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)</span><br><span class="line">    at readDocument (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1519:3)</span><br><span class="line">    at loadDocuments (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1575:5)</span><br><span class="line">    at Object.load (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1596:19)</span><br><span class="line">    at parseYAML (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:78:23)</span><br><span class="line">    at parse (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:54:12)</span><br><span class="line">    at F:\Blog_Hexo_Github_Pages\node_modules\hexo\lib\plugins\processor\post.js:48:20</span><br><span class="line">    at tryCatcher (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:544:35)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:604:18)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br><span class="line">    at Promise._settlePromises (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:729:18)</span><br><span class="line">    at Promise._fulfill (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:673:18)</span><br><span class="line">    at PromiseArray._resolve (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:145:14)</span><br><span class="line">    at PromiseArray._iterate (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:115:31)</span><br><span class="line">    at PromiseArray.init [as _init] (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:79:10)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:601:21)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Hexo/" rel="tag">Hexo</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-05T18:10:27.000Z">2019-12-06</time>
-                        <a href="/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">测试文章分类标签是否自动添加</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a> / <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB/">测试文章分类</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
+</div>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-05T15:09:26.000Z">2019-12-05</time>
-                        <a href="/2019/12/05/Hexo-%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hexo 博客使用笔记</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
                 
-                <a href="/2019/12/05/%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/thumbnails/desert.jpg" alt="通过git创建的第一篇hexo文章">
-                    </p>
-                </a>
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
+</div>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-05T10:36:54.000Z">2019-12-05</time>
-                        <a href="/2019/12/05/%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">通过git创建的第一篇hexo文章</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/">Hexo笔记</a> / <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/">其他</a> / <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/IDE/">IDE</a> / <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/IDE/Java/">Java</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<div class="notification is-danger">
+    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
+</div>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-28T04:25:30.960Z">2019-10-28</time>
-                        <a href="/2019/10/28/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
+                
+<div class="notification is-danger">
+    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
+</div>
+
+                
         </div>
     </div>
 </div>
 
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/05/Hexo-%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
+                <span class="level-item">Hexo 博客使用笔记</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/';
+        this.page.identifier = '2019/12/06/测试文章分类标签是否自动添加/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
     
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
 </div>
                 
 
@@ -758,7 +812,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/catspaw120120.png" alt="Hexo" height="28">
+                    <img src="/images/catspaw120120.png" alt="测试文章分类标签是否自动添加" height="28">
                 
                 </a>
                 <p class="is-size-7">
