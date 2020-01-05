@@ -7,18 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: Hexo - Peter&#39;s Notes</title>
+<title>测试-Hexo-admin-创建文章 - Peter&#39;s Notes</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Peter&#39;s Notes">
-<meta property="og:url" content="https://github.com/txjchu/tags/Hexo/index.html">
+    <meta name="description" content="这是一篇使用本地 Hexo-admin 插件创建的文章发现的问题 据说可以复制粘贴图片，但是图片保存的路径是？  文章编辑时，拥有左右视图，左侧为编辑区域，右侧为效果区域。   需要注意段落的换行，直接回车换行时，右侧显示的未能换行。必须再多输入一个空格。    Markdown 的解析模式还是比较奇怪的。比如空白行的问题。  怎样插入一张图片呢？直接复制是不可以的。  字号大小怎么调节呢。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="测试-Hexo-admin-创建文章">
+<meta property="og:url" content="https://github.com/txjchu/2020/01/05/%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Peter&#39;s Notes">
+<meta property="og:description" content="这是一篇使用本地 Hexo-admin 插件创建的文章发现的问题 据说可以复制粘贴图片，但是图片保存的路径是？  文章编辑时，拥有左右视图，左侧为编辑区域，右侧为效果区域。   需要注意段落的换行，直接回车换行时，右侧显示的未能换行。必须再多输入一个空格。    Markdown 的解析模式还是比较奇怪的。比如空白行的问题。  怎样插入一张图片呢？直接复制是不可以的。  字号大小怎么调节呢。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/images/og_image.png">
+<meta property="og:image" content="https://github.com/gallery/thumbnails/beach.jpg">
+<meta property="article:published_time" content="2020-01-05T09:50:06.000Z">
+<meta property="article:modified_time" content="2020-01-05T10:03:58.934Z">
 <meta property="article:author" content="Peter Chu">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/images/og_image.png">
+<meta name="twitter:image" content="https://github.com/gallery/thumbnails/beach.jpg">
 
 
 
@@ -76,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/catspaw120120.png" alt="Peter&#39;s Notes" height="28">
+                <img src="/images/catspaw120120.png" alt="测试-Hexo-admin-创建文章" height="28">
             
             </a>
         </div>
@@ -125,24 +130,13 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Hexo</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/01/05/%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/" class="image is-7by1">
+        <span  class="image is-7by1">
             <img class="thumbnail" src="/gallery/thumbnails/beach.jpg" alt="测试-Hexo-admin-创建文章">
-        </a>
+        </span>
     </div>
     
     <div class="card-content article ">
@@ -163,12 +157,17 @@
                 </span>
                 
                 
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/01/05/%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/">测试-Hexo-admin-创建文章</a>
+                测试-Hexo-admin-创建文章
             
         </h1>
         <div class="content">
@@ -185,148 +184,109 @@
 </li>
 <li><p>字号大小怎么调节呢。</p>
 </li>
-<li></li></ol></body></html>
+<li><a id="more"></a> 阅读更多..标签的插入问题。（直接写入标签的话会被MD直接解析掉，假如用转义呢<\!-- more -->,是可以的，需要在 `<` 后插入 `\`符号即可 ）</li>
+<li><p>文章的标签、分类设置在文章标题栏的右侧功能按钮区域内的 <code>Settings</code> 内。但是 <code>thumbnail: /gallery/thumbnails/desert.jpg</code> 缩略图设置该插入到哪里呢?</p>
+</li>
+<li><p>文章编辑页面的 <code>Publish</code> 按钮能否发布成功呢，让我们拭目以待。（不行，点完）</p>
+</li>
+<li><p>over.</p>
+</li>
+<li><p>hexo server 现在出现诸多异常</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">    (node:4356) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated</span><br><span class="line">ERROR Process failed: _posts/测试-Hexo-admin-创建文章-1.md</span><br><span class="line">YAMLException: end of the stream or a document separator is expected at line 2, column 1:</span><br><span class="line">    date: 2020-01-05 17:50:06</span><br><span class="line">    ^</span><br><span class="line">    at generateError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)</span><br><span class="line">    at throwError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)</span><br><span class="line">    at readDocument (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1539:5)</span><br><span class="line">    at loadDocuments (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1575:5)</span><br><span class="line">    at Object.load (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1596:19)</span><br><span class="line">    at parseYAML (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:78:23)</span><br><span class="line">    at parse (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:54:12)</span><br><span class="line">    at F:\Blog_Hexo_Github_Pages\node_modules\hexo\lib\plugins\processor\post.js:48:20</span><br><span class="line">    at tryCatcher (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:544:35)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:604:18)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br><span class="line">    at Promise._settlePromises (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:729:18)</span><br><span class="line">    at Promise._fulfill (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:673:18)</span><br><span class="line">    at PromiseArray._resolve (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:145:14)</span><br><span class="line">    at PromiseArray._iterate (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:115:31)</span><br><span class="line">    at PromiseArray.init [as _init] (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:79:10)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:601:21)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br><span class="line">    at Promise._settlePromises (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:729:18)</span><br><span class="line">    at Promise._fulfill (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:673:18)</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</body></html>
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/01/05/%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Hexo/" rel="tag">Hexo</a>
                 </div>
             </div>
         </div>
         
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
 
 
 
-
-
-
-
-
-    
 <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/beach.jpg" alt="测试文章分类标签是否自动添加">
-        </a>
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/catspaw120120.png" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/catspaw120120.png" alt="微信"></div>
+</a>
+
+                
+        </div>
     </div>
-    
-    <div class="card-content article ">
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-05T18:10:27.000Z">2019-12-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB/">测试文章分类</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 475 个字)
-                </span>
-                
-                
-            </div>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/">
+                <span class="level-item">测试文章分类标签是否自动添加</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/">测试文章分类标签是否自动添加</a>
-            
-        </h1>
-        <div class="content">
-            <!-- 这部分内容放在 文章前缀头部 ，测试是否显示  -->
-<p>放在 文章前缀头部 “—“ 包含中的文本不会被显示到文章正文中或标签中(可能是格式问题导致不显示在 tags 中)。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/12/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
         
     </div>
 </div>
 
 
 
-
-
-
-
-
-    
 <div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://github.com/txjchu/2020/01/05/%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/';
+        this.page.identifier = '2020/01/05/测试-Hexo-admin-创建文章/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
     
-    <div class="card-image">
-        <a href="/2019/12/05/%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/desert.jpg" alt="通过git创建的第一篇hexo文章">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-05T10:36:54.000Z">2019-12-05</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/">Hexo笔记</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/">其他</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/IDE/">IDE</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/IDE/Java/">Java</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 594 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/12/05/%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/">通过git创建的第一篇hexo文章</a>
-            
-        </h1>
-        <div class="content">
-            <p>这是通过 GIT 工具使用 <code>hexo new &quot;通过git创建的第一篇hexo文章&quot;</code> 命令创建的第一篇文章。<br>用来测试。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/12/05/%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 </div>
                 
 
@@ -730,7 +690,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/catspaw120120.png" alt="Peter&#39;s Notes" height="28">
+                    <img src="/images/catspaw120120.png" alt="测试-Hexo-admin-创建文章" height="28">
                 
                 </a>
                 <p class="is-size-7">
