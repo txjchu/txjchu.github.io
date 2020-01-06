@@ -1,11 +1,12 @@
 /* ---------------------------------
  *       Override CSS Framework
+ * background-color: #f7f7f7;
  * --------------------------------- */
 html {
   font-size: 14px;
 }
 body {
-  background-color: #f7f7f7;
+  background-color: rgba(10,10,10,0.02);
 }
 body,
 button,
