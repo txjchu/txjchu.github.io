@@ -258,8 +258,19 @@
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
 <div id="comment-container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+/**
+ * [rel description] 初始化评论的时候一直处于loading comments和logging in...状态，需要将下面2个引用地址修改
+ * @type {String} 
+ * <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+ * <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+ */
+
+
+
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
+
 <script>
 	var gitment = new Gitment({
 		id: '9fd868f3283de0e4123090052e3153a2',
