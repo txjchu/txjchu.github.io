@@ -257,23 +257,18 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="comment-container"></div>
-
-
-<link rel="stylesheet" href="https://txjchu.github.io/css/gitment.css">
-<script src="https://txjchu.github.io/js/gitment.browser.js"></script>
-
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
-	var gitment = new Gitment({
-		id: '9fd868f3283de0e4123090052e3153a2',
-		owner: 'txjchu',
-		repo: 'txjchu.github.io',
-		oauth: {
-			client_id: '7068f66333ca01087463',
-			client_secret: 'b1148d18a7592ede56e0b4bbc9006a0e563ebf16',
-		},
-	})
-	gitment.render('comment-container')
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '不能为空',
+        app_key: '不能为空',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
 </script>
 
     </div>
