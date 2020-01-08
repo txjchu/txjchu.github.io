@@ -7,23 +7,24 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>测试-Hexo-admin-创建文章 - Peter&#39;s Notes</title>
+<title>修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式 - Peter&#39;s Notes</title>
 
 
-    <meta name="description" content="这是一篇使用本地 Hexo-admin 插件创建的文章发现的问题 据说可以复制粘贴图片，但是图片保存的路径是？  文章编辑时，拥有左右视图，左侧为编辑区域，右侧为效果区域。   需要注意段落的换行，直接回车换行时，右侧显示的未能换行。必须再多输入一个空格。    Markdown 的解析模式还是比较奇怪的。比如空白行的问题。  怎样插入一张图片呢？直接复制是不可以的。  字号大小怎么调节呢。">
+    <meta name="description" content="当为 icarus 主题配置了 Valine 评论插件后，按照官方文档所说，当访客进行留言评论时，如果留下 Gravatar 中注册的 Email 地址时，则留言的用户头像显示为该 Email 对应的头像。其他用户则默认显示成  mp 神秘人(一个灰白头像)，非常不美好。（且发现自己就算留下了 Email 地址，还是未能正确显示出来想要的 Gravatar 头像，很是奇怪。可能是头像还未生效，过几">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试-Hexo-admin-创建文章">
+<meta property="og:title" content="修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式">
 <meta property="og:url" content="https://github.com/txjchu/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html">
 <meta property="og:site_name" content="Peter&#39;s Notes">
-<meta property="og:description" content="这是一篇使用本地 Hexo-admin 插件创建的文章发现的问题 据说可以复制粘贴图片，但是图片保存的路径是？  文章编辑时，拥有左右视图，左侧为编辑区域，右侧为效果区域。   需要注意段落的换行，直接回车换行时，右侧显示的未能换行。必须再多输入一个空格。    Markdown 的解析模式还是比较奇怪的。比如空白行的问题。  怎样插入一张图片呢？直接复制是不可以的。  字号大小怎么调节呢。">
+<meta property="og:description" content="当为 icarus 主题配置了 Valine 评论插件后，按照官方文档所说，当访客进行留言评论时，如果留下 Gravatar 中注册的 Email 地址时，则留言的用户头像显示为该 Email 对应的头像。其他用户则默认显示成  mp 神秘人(一个灰白头像)，非常不美好。（且发现自己就算留下了 Email 地址，还是未能正确显示出来想要的 Gravatar 头像，很是奇怪。可能是头像还未生效，过几">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/gallery/thumbnails/beach.jpg">
-<meta property="article:published_time" content="2020-01-05T09:50:06.000Z">
-<meta property="article:modified_time" content="2020-01-05T10:03:58.934Z">
+<meta property="og:image" content="https://github.com/images/og_image.png">
+<meta property="article:published_time" content="2020-01-05T09:31:00.000Z">
+<meta property="article:modified_time" content="2020-01-08T02:19:08.129Z">
 <meta property="article:author" content="Peter Chu">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="评论插件">
+<meta property="article:tag" content="Valine">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/gallery/thumbnails/beach.jpg">
+<meta name="twitter:image" content="https://github.com/images/og_image.png">
 
 
 
@@ -81,7 +82,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/catspaw120120.png" alt="测试-Hexo-admin-创建文章" height="28">
+                <img src="/images/catspaw120120.png" alt="修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式" height="28">
             
             </a>
         </div>
@@ -133,27 +134,21 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
-    <div class="card-image">
-        <span  class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/beach.jpg" alt="测试-Hexo-admin-创建文章">
-        </span>
-    </div>
-    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-05T09:50:06.000Z">2020-01-05</time>
+                <time class="level-item has-text-grey" datetime="2020-01-05T09:31:00.000Z">2020-01-05</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95/">测试</a>
+                <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/Hexo-%E9%85%8D%E7%BD%AE/">Hexo 配置</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/Hexo-%E9%85%8D%E7%BD%AE/%E8%AE%B0%E5%BD%95/">记录</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 690 个字)
+                    5 分钟 读完 (大约 717 个字)
                 </span>
                 
                 
@@ -167,33 +162,73 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                测试-Hexo-admin-创建文章
+                修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式
             
         </h1>
         <div class="content">
-            <html><head></head><body><h4 id="这是一篇使用本地-Hexo-admin-插件创建的文章"><a href="#这是一篇使用本地-Hexo-admin-插件创建的文章" class="headerlink" title="这是一篇使用本地 Hexo-admin 插件创建的文章"></a>这是一篇使用本地 Hexo-admin 插件创建的文章</h4><h6 id="发现的问题"><a href="#发现的问题" class="headerlink" title="发现的问题"></a>发现的问题</h6><ol>
-<li><p>据说可以复制粘贴图片，但是图片保存的路径是？</p>
-</li>
-<li><p>文章编辑时，拥有左右视图，左侧为编辑区域，右侧为效果区域。 </p>
-</li>
-<li><p>需要注意段落的换行，直接回车换行时，右侧显示的未能换行。必须再多输入一个空格。  </p>
-</li>
-<li><p>Markdown 的解析模式还是比较奇怪的。比如空白行的问题。</p>
-</li>
-<li><p>怎样插入一张图片呢？直接复制是不可以的。</p>
-</li>
-<li><p>字号大小怎么调节呢。</p>
-</li>
-<li><a id="more"></a> 阅读更多..标签的插入问题。（直接写入标签的话会被MD直接解析掉，假如用转义呢<\!-- more -->,是可以的，需要在 `<` 后插入 `\`符号即可 ）</li>
-<li><p>文章的标签、分类设置在文章标题栏的右侧功能按钮区域内的 <code>Settings</code> 内。但是 <code>thumbnail: /gallery/thumbnails/desert.jpg</code> 缩略图设置该插入到哪里呢?</p>
-</li>
-<li><p>文章编辑页面的 <code>Publish</code> 按钮能否发布成功呢，让我们拭目以待。（不行，点完）</p>
-</li>
-<li><p>over.</p>
-</li>
-<li><p>hexo server 现在出现诸多异常</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">    (node:4356) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated</span><br><span class="line">ERROR Process failed: _posts/测试-Hexo-admin-创建文章-1.md</span><br><span class="line">YAMLException: end of the stream or a document separator is expected at line 2, column 1:</span><br><span class="line">    date: 2020-01-05 17:50:06</span><br><span class="line">    ^</span><br><span class="line">    at generateError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)</span><br><span class="line">    at throwError (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)</span><br><span class="line">    at readDocument (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1539:5)</span><br><span class="line">    at loadDocuments (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1575:5)</span><br><span class="line">    at Object.load (F:\Blog_Hexo_Github_Pages\node_modules\js-yaml\lib\js-yaml\loader.js:1596:19)</span><br><span class="line">    at parseYAML (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:78:23)</span><br><span class="line">    at parse (F:\Blog_Hexo_Github_Pages\node_modules\hexo-front-matter\lib\front_matter.js:54:12)</span><br><span class="line">    at F:\Blog_Hexo_Github_Pages\node_modules\hexo\lib\plugins\processor\post.js:48:20</span><br><span class="line">    at tryCatcher (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:544:35)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:604:18)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br><span class="line">    at Promise._settlePromises (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:729:18)</span><br><span class="line">    at Promise._fulfill (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:673:18)</span><br><span class="line">    at PromiseArray._resolve (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:145:14)</span><br><span class="line">    at PromiseArray._iterate (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:115:31)</span><br><span class="line">    at PromiseArray.init [as _init] (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise_array.js:79:10)</span><br><span class="line">    at Promise._settlePromise (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:601:21)</span><br><span class="line">    at Promise._settlePromise0 (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:649:10)</span><br><span class="line">    at Promise._settlePromises (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:729:18)</span><br><span class="line">    at Promise._fulfill (F:\Blog_Hexo_Github_Pages\node_modules\bluebird\js\release\promise.js:673:18)</span><br></pre></td></tr></tbody></table></figure></li>
+            <html><head></head><body><p>当为 icarus 主题配置了 Valine 评论插件后，按照官方文档所说，当访客进行留言评论时，如果留下 Gravatar 中注册的 Email 地址时，则留言的用户头像显示为该 Email 对应的头像。其他用户则默认显示成  <code>mp</code> 神秘人(一个灰白头像)，非常不美好。（且发现自己就算留下了 Email 地址，还是未能正确显示出来想要的 Gravatar 头像，很是奇怪。可能是头像还未生效，过几天再验证。）因此，需要将其修改为富有趣味的头像，且若访客的留言的 email 地址为同一个时，则不在随机赋予其他头像，而是采用第一次赋予的头像。这样也非常有利于快速分辨用户留言。</p>
+<p>下面记录下自己将 <code>mp</code> 类型头像修改为 Gravatar 提供的其他类型头像的关键：</p>
+<ol>
+<li>打开 <code>themes\icarus\layout\comment</code>文件夹中的<code>valine.ejs</code>文件，在其 js 脚本中添加一行读取 <code>avatar</code> 属性的语句。（注意<code>,</code>）<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">new Valine({</span><br><span class="line">    el: '#valine-thread' ,</span><br><span class="line">    notify: <%= get_config('comment.notify') %>,</span><br><span class="line">    verify: <%= get_config('comment.verify') %>,</span><br><span class="line">    app_id: '<%= get_config('comment.app_id') %>',</span><br><span class="line">    app_key: '<%= get_config('comment.app_key') %>',</span><br><span class="line">    placeholder: '<%= get_config('comment.placeholder') %>',</span><br><span class="line">    avatar: '<%= get_config('comment.avatar') %>' </span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在 icarus 主题配置文件 _config.yml 中配置 <code>comment</code> 部分添加<code>avatar</code> 属性。</li>
 </ol>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">comment:</span><br><span class="line">    # Name of the comment plugin</span><br><span class="line">    #可选valine，disqus（科学上网）等     </span><br><span class="line">    # Name of the comment plugin</span><br><span class="line">    type: valine</span><br><span class="line">    app_id: **************           # (必填) LeanCloud application id</span><br><span class="line">    app_key: **************           # (必填) LeanCloud application key</span><br><span class="line">    notify: false             # (可选) 是否接收邮件通知</span><br><span class="line">    verify: false             # (可选) 是否显示验证码</span><br><span class="line">    placeholder: ヾﾉ≧∀≦)o 来啊，说点什么!   # (可选) 评论框占位符</span><br><span class="line">    avatar: monsterid</span><br></pre></td></tr></tbody></table></figure>
+<p>说明：</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数值</th>
+<th align="center">表现形式</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">空字符串<code>''</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40" alt="Gravatar官方图形"></td>
+<td>Gravatar官方图形</td>
+</tr>
+<tr>
+<td align="center"><code>mp</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40&d=mp" alt="神秘人(一个灰白头像)"></td>
+<td>神秘人(一个灰白头像)</td>
+</tr>
+<tr>
+<td align="center"><code>identicon</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40&d=identicon" alt="抽象几何图形"></td>
+<td>抽象几何图形</td>
+</tr>
+<tr>
+<td align="center"><code>monsterid</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40&d=monsterid" alt="小怪物"></td>
+<td>小怪物</td>
+</tr>
+<tr>
+<td align="center"><code>wavatar</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40&d=wavatar" alt="用不同面孔和背景组合生成的头像"></td>
+<td>用不同面孔和背景组合生成的头像</td>
+</tr>
+<tr>
+<td align="center"><code>retro</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/adb831a7fdd83dd1e2a309ce7591dff8?s=40&d=retro" alt="八位像素复古头像"></td>
+<td>八位像素复古头像</td>
+</tr>
+<tr>
+<td align="center"><code>robohash</code></td>
+<td align="center"><img src="https://gravatar.cat.net/avatar/00000000000000000000000000000000?s=40&d=robohash&f=y" alt="机器人"></td>
+<td>一种具有不同颜色、面部等的机器人</td>
+</tr>
+<tr>
+<td align="center"><code>hide</code></td>
+<td align="center"></td>
+<td>不显示头像</td>
+</tr>
+</tbody></table>
+<ol start="3">
+<li>至此就重新生成、发布即可。</li>
+</ol>
+<p>原效果：</p>
+<p><img src="%5Cimages%5Cyuantouxiangxiaoguo.png" alt="upload successful"></p>
+<p>最终效果:<br><img src="%5Cimages%5Czuizhongtouxiangxiaoguo.png" alt="upload successful"></p>
 </body></html>
         </div>
         
@@ -201,7 +236,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Hexo/" rel="tag">Hexo</a>
+                    <a class="has-link-grey -link" href="/tags/Valine/" rel="tag">Valine</a>, <a class="has-link-grey -link" href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" rel="tag">评论插件</a>
                 </div>
             </div>
         </div>
@@ -250,6 +285,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/posts/20200108-%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-Hexo-Admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E5%89%8D%E7%BC%80%E5%86%85%E5%AE%B9%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">测试使用 Hexo-Admin 创建文章的前缀内容如何定义</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -301,7 +343,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="is-rounded" src="https://www.gravatar.com/avatar/0b2b0b819587a899220b4cb3400986dc?s=128" alt="Peter Chu">
+                        <img class="is-rounded" src="/images/catspaw.jpg" alt="Peter Chu">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -329,7 +371,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -339,7 +381,7 @@
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        7
+                        10
                     </p>
                 </div>
             </div>
@@ -349,7 +391,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        6
                     </p>
                 </div>
             </div>
@@ -420,7 +462,7 @@
                     <span class="level-item">一月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -468,6 +510,20 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Valine/">
+                        <span class="tag">Valine</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%95/">
+                        <span class="tag">测试</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/">
                         <span class="tag">测试标签</span>
                         <span class="tag is-grey">1</span>
@@ -477,6 +533,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
                         <span class="tag">第一篇文章</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                        <span class="tag">评论插件</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -497,18 +560,37 @@
         
         <article class="media">
             
-            <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="media-left">
+            <a href="/posts/20200108-%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-Hexo-Admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E5%89%8D%E7%BC%80%E5%86%85%E5%AE%B9%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnails/beach.jpg" alt="测试-Hexo-admin-创建文章">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="测试使用 Hexo-Admin 创建文章的前缀内容如何定义">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-05T09:50:06.000Z">2020-01-05</time></div>
-                    <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">测试-Hexo-admin-创建文章</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-08T01:23:00.000Z">2020-01-08</time></div>
+                    <a href="/posts/20200108-%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-Hexo-Admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E5%89%8D%E7%BC%80%E5%86%85%E5%AE%B9%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">测试使用 Hexo-Admin 创建文章的前缀内容如何定义</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a> / <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95/">测试</a>
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-05T09:31:00.000Z">2020-01-05</time></div>
+                    <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/Hexo-%E9%85%8D%E7%BD%AE/">Hexo 配置</a>
                     </p>
                 </div>
             </div>
@@ -566,25 +648,6 @@
                     <a href="/posts/20191205-%E9%80%9A%E8%BF%87git%E5%88%9B%E5%BB%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">通过git创建的第一篇hexo文章</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/">Hexo笔记</a> / <a class="has-link-grey -link" href="/categories/Hexo%E7%AC%94%E8%AE%B0/%E5%85%B6%E4%BB%96/">其他</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/posts/20191028-hello-world.html" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnails/plant.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-28T04:25:30.960Z">2019-10-28</time></div>
-                    <a href="/posts/20191028-hello-world.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
                     </p>
                 </div>
             </div>
@@ -648,18 +711,37 @@
         
         <article class="media">
             
-            <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="media-left">
+            <a href="/posts/20200108-%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-Hexo-Admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E5%89%8D%E7%BC%80%E5%86%85%E5%AE%B9%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnails/beach.jpg" alt="测试-Hexo-admin-创建文章">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="测试使用 Hexo-Admin 创建文章的前缀内容如何定义">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-05T09:50:06.000Z">2020-01-05</time></div>
-                    <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">测试-Hexo-admin-创建文章</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-08T01:23:00.000Z">2020-01-08</time></div>
+                    <a href="/posts/20200108-%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-Hexo-Admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E5%89%8D%E7%BC%80%E5%86%85%E5%AE%B9%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">测试使用 Hexo-Admin 创建文章的前缀内容如何定义</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/">测试hexo</a> / <a class="has-link-grey -link" href="/categories/%E6%B5%8B%E8%AF%95hexo/%E6%B5%8B%E8%AF%95/">测试</a>
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-05T09:31:00.000Z">2020-01-05</time></div>
+                    <a href="/posts/20200105-%E6%B5%8B%E8%AF%95-Hexo-admin-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0/Hexo-%E9%85%8D%E7%BD%AE/">Hexo 配置</a>
                     </p>
                 </div>
             </div>
@@ -722,25 +804,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/posts/20191028-hello-world.html" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnails/plant.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-28T04:25:30.960Z">2019-10-28</time></div>
-                    <a href="/posts/20191028-hello-world.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -792,7 +855,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/catspaw120120.png" alt="测试-Hexo-admin-创建文章" height="28">
+                    <img src="/images/catspaw120120.png" alt="修改 icarus 主题中采用  Valine 评论插件时用户头像显示成其他样式" height="28">
                 
                 </a>
                 <p class="is-size-7">
